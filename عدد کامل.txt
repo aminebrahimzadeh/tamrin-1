@@ -1,0 +1,20 @@
+ Console.WriteLine(  "please enter your number:");
+            int a = int.Parse(Console.ReadLine());
+            int b = 0;
+            for (int i = 1; i < a; i++)
+            {
+                if (a%i==0)
+                {
+                    b += i;
+                }
+            }
+            if (a==b)
+            {
+                Console.WriteLine("kamel ast");
+            }
+            else
+            {
+                Console.WriteLine("kamel nist");
+            }
+            Console.ReadKey();
+        }
