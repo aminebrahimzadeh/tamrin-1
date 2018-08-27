@@ -1,0 +1,31 @@
+ Console.WriteLine("please enter your grade:");
+            int grade = int.Parse(Console.ReadLine());
+
+            if (grade >= 0 && grade <= 10)
+            {
+                Console.WriteLine("g");
+            }
+            else if (grade > 10 && grade <= 12)
+            {
+                Console.WriteLine("f");
+
+            }
+            else if (grade > 12 && grade <= 14)
+            {
+                Console.WriteLine("c");
+            }
+            else if (grade > 14 && grade <= 16)
+            {
+                Console.WriteLine("b");
+            }
+            else if (grade > 16)
+            {
+                Console.WriteLine("a");
+            }
+            else
+            {
+                Console.WriteLine("your grade is not valid.");
+            }
+
+            Console.ReadKey();
+        }

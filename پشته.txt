@@ -1,0 +1,20 @@
+
+            int a = int.Parse(Console.ReadLine());
+            int[] numbers = new int[a];
+            for (int i = 0; i < a; i++)
+            {
+                int b = int.Parse(Console.ReadLine());
+                numbers[i] = b;
+            }
+            for (int i = 0; i < a/2; i++)
+            {
+                int c = numbers[i];
+                numbers[i] = numbers[a - 1 - i];
+                numbers[a - 1 - i] = c;
+            }
+            for (int i = 0; i < a; i++)
+            {
+                Console.WriteLine(numbers[i]);
+            }
+            Console.ReadKey();        }
+    }
