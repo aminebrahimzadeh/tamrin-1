@@ -1,0 +1,24 @@
+int a = int.Parse(Console.ReadLine());
+            int b = int.Parse(Console.ReadLine());
+            int c = a;
+            int d = 1;
+            if (a>b)
+            {
+                c = b;
+            }
+            for (int i = 1; i <=c; i++)
+            {
+                if (a%i==0)
+                {
+                    if (b%i==0)
+                    {
+                         d = i;
+                    }
+                }
+            }
+
+            Console.WriteLine("bmm="+d);
+            Console.ReadKey();
+            
+
+        }
